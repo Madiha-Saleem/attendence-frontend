@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Attendance Data</title>
+    <link rel="stylesheet" href="view.css">
+</head>
+<body>
+
+<section class="content">
+    <div class="container">
+        <div id="messages" class="messages">
+            <div class="alert alert-success">Attendance data loaded successfully!</div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">View Attendance</h3>
+            </div>
+            <form action="#">
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select name="subject" id="subject" class="form-control">
+                            <option value="1">Mathematics</option>
+                            <option value="2">Forensic Science</option>
+                            <option value="3">Programming in C++</option>
+                            <option value="4">Digital Logic Design</option>
+                            <option value="5">Enviromental Science</option>
+                            <option value="6">Professional Ethics</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="start_date">Start Date</label>
+                            <input type="date" id="start_date" name="start_date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="end_date">End Date</label>
+                            <input type="date" id="end_date" name="end_date" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button type="submit" class="btn">Fetch Attendance</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
